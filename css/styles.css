@@ -1,0 +1,49 @@
+body {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 8px;
+  justify-content: center;
+  user-select: none;
+}
+
+.cell {
+  background-color: #6c757d;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  aspect-ratio: 1;
+  transition: background-color 0.3s;
+}
+
+.cell:hover {
+  background-color: #495057;
+}
+
+.found {
+  background-color: gold !important;
+  color: black;
+  font-weight: bold;
+  animation: blink 1s infinite alternate;
+}
+
+.miss {
+  background-color: #dc3545 !important;
+  color: white;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
